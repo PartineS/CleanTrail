@@ -1,8 +1,4 @@
-# CleanTrail
 
-**Türkçe aşağıda | See English below**
-
----
 
 ## 🇹🇷 CleanTrail Nedir?
 
