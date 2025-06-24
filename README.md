@@ -29,7 +29,7 @@ CleanTrail, Windows kullanıcılarının gizliliğini korumak ve izlerini silmek
    Çıktı klasörü:  
    `bin\Release\net6.0-windows\win-x64\publish\CleanTrail.exe`
 
-### Katkı Sağlamak
+### Katkı 
 Pull request ve issue göndermekten çekinmeyin!
 
 ---
