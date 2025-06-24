@@ -1,0 +1,22 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="Title">CleanTrail</sys:String>
+    <sys:String x:Key="CleanupTypes">Silinecek İz Türleri</sys:String>
+    <sys:String x:Key="RecentFiles">Recent Dosyaları</sys:String>
+    <sys:String x:Key="QuickAccess">Quick Access</sys:String>
+    <sys:String x:Key="ThumbnailCache">Thumbnail Cache</sys:String>
+    <sys:String x:Key="FolderHistory">Klasör Geçmişi (izleme)</sys:String>
+    <sys:String x:Key="ChromeHistory">Tarayıcı Geçmişi (Chrome)</sys:String>
+    <sys:String x:Key="EdgeHistory">Tarayıcı Geçmişi (Edge)</sys:String>
+    <sys:String x:Key="FirefoxHistory">Tarayıcı Geçmişi (Firefox)</sys:String>
+    <sys:String x:Key="OperaHistory">Tarayıcı Geçmişi (Opera)</sys:String>
+    <sys:String x:Key="Autostart">Windows ile otomatik başlat</sys:String>
+    <sys:String x:Key="BtnThemeLight">Açık</sys:String>
+    <sys:String x:Key="BtnThemeDark">Koyu</sys:String>
+    <sys:String x:Key="BtnStart">Temizliği Başlat</sys:String>
+    <sys:String x:Key="FoldersToWatch">İzlenecek Klasörler</sys:String>
+    <sys:String x:Key="BtnAddFolder">Klasör Ekle</sys:String>
+    <sys:String x:Key="LogTitle">Temizlik Logu</sys:String>
+    <sys:String x:Key="StatusIdle">Durum: Beklemede...</sys:String>
+    <sys:String x:Key="StatusCleaned">Durum: Temizlik yapıldı</sys:String>
+</ResourceDictionary>
