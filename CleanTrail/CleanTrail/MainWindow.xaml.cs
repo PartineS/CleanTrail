@@ -17,7 +17,6 @@ namespace CleanTrail
             LoadLog();
         }
 
-        // Klasör kutusu, CheckBox ile açılıp kapanır
         private void chkFolders_Checked(object sender, RoutedEventArgs e)
         {
             spFolders.Visibility = Visibility.Visible;
@@ -68,14 +67,14 @@ namespace CleanTrail
                 }
             }
 
-            // Seçili iz türlerini hemen temizle
+
             DoCleanup("Manuel temizlik");
             tbStatus.Text = TryFindResource("StatusCleaned") as string ?? "Durum: Temizlik yapıldı";
             NotificationService.Show(tbStatus.Text);
             LoadLog();
         }
 
-        // Klasör olayında temizlik
+
         private void OnFolderAccessed(string path)
         {
             DoCleanup($"Klasör etkinliği: {path}");
@@ -86,7 +85,7 @@ namespace CleanTrail
             LoadLog();
         }
 
-        // Sadece seçilen türler temizlenir
+
         private void DoCleanup(string reason)
         {
             var cleaned = new List<string>();
@@ -128,18 +127,16 @@ namespace CleanTrail
             LogService.Log($"{reason}: {string.Join(", ", cleaned)}");
         }
 
-        // Tray'e gizle
+
         protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
         {
             this.Hide();
             e.Cancel = true;
         }
 
-        // Otomatik başlatma
+
         private void chkAutostart_Checked(object sender, RoutedEventArgs e) => StartupService.EnableAutostart();
         private void chkAutostart_Unchecked(object sender, RoutedEventArgs e) => StartupService.DisableAutostart();
-
-        // Tema değiştirme
         private void btnThemeLight_Click(object sender, RoutedEventArgs e) => SetTheme("Light");
         private void btnThemeDark_Click(object sender, RoutedEventArgs e) => SetTheme("Dark");
         private void SetTheme(string themeName)
@@ -149,7 +146,7 @@ namespace CleanTrail
             Application.Current.Resources.MergedDictionaries[0] = dict;
         }
 
-        // Dil değiştirme
+
         private void btnLangTr_Click(object sender, RoutedEventArgs e) => SetLanguage("tr");
         private void btnLangEn_Click(object sender, RoutedEventArgs e) => SetLanguage("en");
         private void SetLanguage(string lang)
@@ -159,7 +156,7 @@ namespace CleanTrail
             Application.Current.Resources.MergedDictionaries[1] = dict;
         }
 
-        // Log yükle
+        // Log
         private void LoadLog()
         {
             string logFile = System.IO.Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "cleantrail.log");
