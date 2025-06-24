@@ -9,7 +9,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Sol Panel: İz Türü Seçimi ve Ayarlar -->
+        <!-- İz Türü Seçimi ve Ayarlar -->
         <StackPanel Grid.Column="0" Margin="10" Background="#FAFAFA">
             <TextBlock FontWeight="Bold" FontSize="16" Text="{DynamicResource CleanupTypes}" Margin="0,0,0,14"/>
             <CheckBox x:Name="chkRecent" Content="{DynamicResource RecentFiles}" IsChecked="True"/>
@@ -35,7 +35,7 @@
             <TextBlock Name="tbStatus" Text="{DynamicResource StatusIdle}" Margin="0,10,0,0"/>
         </StackPanel>
 
-        <!-- Sağ Panel: Klasör Listesi ve Ekleme -->
+        <!-- Klasör Listesi ve Ekleme -->
         <StackPanel Grid.Column="1" Margin="20,10,10,10">
             <StackPanel x:Name="spFolders" Visibility="Collapsed">
                 <TextBlock FontWeight="Bold" Text="{DynamicResource FoldersToWatch}" Margin="0,0,0,6"/>
