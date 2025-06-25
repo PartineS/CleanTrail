@@ -1,40 +1,4 @@
-
-
-## 🇹🇷 CleanTrail Nedir?
-
-CleanTrail, Windows kullanıcılarının gizliliğini korumak ve izlerini silmek için geliştirilmiş açık kaynak kodlu bir temizlik/gizlilik uygulamasıdır.
-
-### Özellikler
-- Son açılan dosyalar (Recent Files) temizliği
-- Hızlı Erişim (Quick Access) geçmişi temizliği
-- Thumbnail cache (küçük resim önbelleği) temizliği
-- Chrome, Edge, Firefox ve Opera tarayıcılarının geçmişini silme
-- Seçtiğiniz klasörleri izleyip erişim olduğunda otomatik temizlik yapabilme
-- Sistem tepsisinde (tray) çalışabilme ve bildirim desteği
-- Otomatik başlatma desteği
-- Açık/Koyu tema (Light/Dark) ve Türkçe/İngilizce dil desteği
-- Temizlik işlemlerini log dosyasına kaydetme
-
-### Nasıl Kullanılır?
-1. **EXE dosyasını indirin:**  
-   Sağ üstteki [Releases](https://github.com/PartineS/CleanTrail/releases) sekmesine gidin ve son sürümü indirip kullanın.  
-   (Henüz EXE dosyası eklenmediyse, bilgisayarınızda .NET 6.0+ yüklü ise aşağıdaki adımları izleyebilirsiniz.)
-
-2. **EXE Dosyası Yoksa Kendiniz Derleyin:**
-   ```sh
-   git clone https://github.com/PartineS/CleanTrail.git
-   cd CleanTrail
-   dotnet publish -c Release -r win-x64 --self-contained=true
-   ```
-   Çıktı klasörü:  
-   `bin\Release\net6.0-windows\win-x64\publish\CleanTrail.exe`
-
-### Katkı 
-Pull request ve issue göndermekten çekinmeyin!
-
----
-
-## 🇬🇧 What is CleanTrail?
+## What is CleanTrail?
 
 CleanTrail is an open-source privacy and cleaning app for Windows, designed to erase usage traces and protect your privacy.
 
@@ -70,3 +34,4 @@ Feel free to open pull requests and issues!
 
 **[Releases (EXE Download)](https://github.com/PartineS/CleanTrail/releases)**  
 **Licensed under MIT**
+---
