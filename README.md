@@ -34,4 +34,6 @@ Feel free to open pull requests and issues!
 
 **[Releases (EXE Download)](https://github.com/PartineS/CleanTrail/releases)**  
 **Licensed under MIT**
+
+
 ---
